@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-image: url("https://th.bing.com/th/id/R.ef9415ed2cd1f78d9b5008860225af78?rik=pIvrfAqlxcU9DA&riu=http%3a%2f%2fwww.mariarodgersorourke.com%2fwp-content%2fuploads%2f2014%2f05%2fto-do-list1.jpg&ehk=cD%2fw95RBbGll6mlP1ibVAhEEDk1ufYfPEiqFp8Hoe4o%3d&risl=&pid=ImgRaw&r=0");   
+     background-size: cover;
+     background-repeat: no-repeat;
+  }
+  
+  h1 {
+    margin-left:500px;
+    color: white;
+    font-weight: 800;
+    font-size:40px;
+  }
+  
+  .add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 450px;
+    margin-right: auto;
+    background-color:rgb(51, 90, 247);
+    border-radius: 20px;
+    box-shadow: 1px 2px 1px inset rgb(227, 14, 14);
+    width: 300px;
+    padding: 20px;
+    border:2px solid rgb(50, 136, 234);
+  }
+  
+  .add-task input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    border: 2px solid rgb(232, 70, 227);
+  }
+  
+  .add-task input[type="datetime-local"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 2px solid rgb(232, 85, 210);
+  }
+  
+  .add-task button {
+    padding: 10px 20px;
+    background-color:blue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-task button:hover {
+    background-color:green;
+  }
+  
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tasks .task-list {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .tasks .task-list.completed {
+    background-color: grey;
+  }
+  
+  .tasks h2 {
+    margin-bottom: 10px;
+    margin-left: -170px;
+    color: #1a166e;
+  }
+  
+  .tasks ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .tasks li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .tasks .task-item {
+    flex-grow: 0;
+    margin-right: 10px;
+  }
+  
+  .tasks .task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .tasks .task-item .task-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
